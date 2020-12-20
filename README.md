@@ -1,4 +1,4 @@
-# # Teste para vaga Front-end Wikidados
+# Teste para vaga Front-end Wikidados
 > **_Status:_** Finalizado :heavy_check_mark:
 
 ## Descrição
