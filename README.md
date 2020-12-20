@@ -1,4 +1,4 @@
-# Teste para vaga Front-end Wikidados
+# Teste Front-end Wikidados
 > **_Status:_** Finalizado :heavy_check_mark:
 
 ## Descrição
@@ -26,7 +26,7 @@ git clone https://github.com/filiphis/wikidados-teste
 cd wikidados-teste
 ```
 
-Instale as dependencias para rodar a API e execute-a. Irá iniciar um servidor na porta 8080.
+Instale as dependencias necessárias e inicie o servidor local. Irá iniciar um servidor na porta 8080.
 ```
 npm install
 quasar dev
