@@ -1,26 +1,37 @@
-# Quasar App (exemplo)
+# Teste Front-end Wikidados
+> **_Status:_** Finalizado :heavy_check_mark:
 
-A Quasar Framework app
+## Descrição
 
-## Install the dependencies
-```bash
-yarn
+Projeto desenvolvido para avaliação da vaga front-ent da Wikidados.
+
+
+## Tecnologias utilizadas
+* HTML
+* CSS
+* JS
+* VUE
+* Quisar Ui
+
+## Como rodar a aplicação  :arrow_forward:
+
+Acesso em produção: https://wikidados-teste.vercel.app/
+
+
+Para acessar localmente realize os passos abaixo:
+
+Clone e acesse o repositorio:
+```
+git clone https://github.com/filiphis/wikidados-teste
+cd wikidados-teste
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
+Instale as dependencias necessárias e inicie o servidor local. Irá iniciar um servidor na porta 8080.
+```
+npm install
 quasar dev
 ```
 
-### Lint the files
-```bash
-yarn run lint
-```
+O projeto será aberto em uma janela do seu navegador padão.
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+Pronto, visualize o projeto :open_mouth: :satisfied:
