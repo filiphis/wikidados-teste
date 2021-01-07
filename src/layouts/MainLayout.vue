@@ -15,6 +15,10 @@
           Usuarios
         </q-toolbar-title>
 
+        <UsuarioLogado v-if="usuarioLogado" @linksPagina="alteraLinks" />
+        <UsuarioDeslogado v-else @linksPagina="alteraLinks" />
+
+        <div></div>
       </q-toolbar>
     </q-header>
 
@@ -25,10 +29,7 @@
       content-class="bg-grey-1"
     >
       <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
+        <q-item-label header class="text-grey-8">
           Funcionalidades
         </q-item-label>
         <EssentialLink
@@ -36,7 +37,6 @@
           :key="link.title"
           v-bind="link"
         />
-
       </q-list>
     </q-drawer>
 
@@ -47,31 +47,37 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import EssentialLink from "components/EssentialLink.vue";
+import UsuarioLogado from "components/UsuarioLogado.vue";
+import UsuarioDeslogado from "components/UsuarioDeslogado.vue";
 
-const linksData = [
-  {
-    title: 'Listar usuarios',
-    caption: '',
-    icon: 'list',
-    link: '/users/list'
-  },
-  {
-    title: 'Cadastrar Usuarios',
-    caption: '',
-    icon: 'add',
-    link: '/users/register'
-  },
-];
+const linksData = [];
 
 export default {
-  name: 'MainLayout',
-  components: { EssentialLink },
-  data () {
+  name: "MainLayout",
+  components: {
+    EssentialLink,
+    UsuarioLogado,
+    UsuarioDeslogado
+  },
+
+  data() {
     return {
       leftDrawerOpen: false,
       essentialLinks: linksData
+    };
+  },
+
+  methods: {
+    alteraLinks(links) {
+      this.essentialLinks = links;
+    }
+  },
+
+  computed: {
+    usuarioLogado() {
+      return Boolean(this.$store.state.token);
     }
   }
-}
+};
 </script>

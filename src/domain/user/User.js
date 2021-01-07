@@ -16,10 +16,6 @@ export default {
     return retorno;
   },
 
-  // delete: (user) => {
-  //   return http.delete('user', {data:user});
-  // }
-
 
 }
 
