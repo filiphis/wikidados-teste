@@ -41,7 +41,7 @@ Router.beforeEach((routeTo, routeFrom, next) => {
 
     return (
       setTimeout(() => {
-        next({path: 'users/login'})
+        next({path: 'login'})
       }, 4000)
     ) ;
 

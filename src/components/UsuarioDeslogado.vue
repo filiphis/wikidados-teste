@@ -10,19 +10,19 @@ const linksData = [
     title: "Listar usuarios",
     caption: "",
     icon: "list",
-    link: "/users/list"
+    link: "list"
   },
   {
     title: "Cadastrar Usuarios",
     caption: "",
     icon: "add",
-    link: "/users/register"
+    link: "register"
   },
   {
     title: "Cadastrar Login",
     caption: "",
     icon: "face",
-    link: "/users/register-login"
+    link: "register-login"
   }
 ];
 

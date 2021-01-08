@@ -16,25 +16,25 @@ const linksData = [
     title: "Home",
     caption: "",
     icon: "home",
-    link: "/users/home"
+    link: "home"
   },
   {
     title: "Mostra Dashboard",
     caption: "",
     icon: "dashboard",
-    link: "/users/dashboard"
+    link: "dashboard"
   },
   {
     title: "Listar usuarios",
     caption: "",
     icon: "list",
-    link: "/users/list"
+    link: "list"
   },
   {
     title: "Cadastrar Usuarios",
     caption: "",
     icon: "add",
-    link: "/users/register"
+    link: "register"
   }
 ];
 
